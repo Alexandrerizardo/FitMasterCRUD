@@ -1,0 +1,29 @@
+﻿@model Aluno
+
+@{
+    ViewData["Title"] = "Excluir Aluno";
+}
+
+<div class="text-center align-center">
+    <h2>Confirmação de Exclusão</h2>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <p class="alert alert-success mt-4 mb-4">@TempData["MensagemSucesso"]</p>
+    }
+    <p>Tem certeza que deseja excluir o aluno <strong>@Model.Nome</strong>?</p>
+
+    <form method="post" asp-action="ExcluirConfirmado">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Excluir</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <p class="alert alert-danger">@TempData["MensagemErro"]</p>
+    }
+ 
+</div>
+
+

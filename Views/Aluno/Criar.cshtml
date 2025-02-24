@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Cadastro de Aluno";
+}
+
+<div class="text-center">
+
+    <h2>Cadastro de Aluno</h2>
+</div>
+
+    @if (ViewBag.Mensagem != null)
+    {
+        <p class="alert alert-success mt-4 mb-4">@ViewBag.Mensagem</p>
+    }
+
+    <form method="post" asp-controller="Aluno" asp-action="Criar" class="container mt-4">
+        <div class="mb-3">
+            <label class="form-label">Nome</label>
+            <input type="text" name="Nome" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Idade</label>
+            <input type="number" name="Idade" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" name="Email" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Senha</label>
+            <input type="password" name="Senha" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Plano</label>
+            <select name="Plano" class="form-select">
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+
