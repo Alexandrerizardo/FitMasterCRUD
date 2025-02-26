@@ -19,6 +19,9 @@ public class Aluno
     [Required, MinLength(6, ErrorMessage = "A senha deve ter pelo menos 6 caracteres.")]
     public string Senha { get; set; } = string.Empty;
 
+    [Required, MinLength(6, ErrorMessage = "A senha deve ter pelo menos 6 caracteres.")]
+    public string SenhaConfirm { get; set; } = string.Empty;
+
     [Required]
     public string Plano { get; set; } = string.Empty;
 }

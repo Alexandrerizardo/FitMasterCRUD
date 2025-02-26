@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #eaeaea;
+    }
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        height: 30%;
+        width: 100vw;
+        max-width: 400px;
+        max-height: 400px;
+        min-height: 400px;
+    }
+
+    body {
+        font-family: 'MinhaFonte', sans-serif;
+    }
+</style>
+
+@if (ViewBag.Mensagem != null)
+{
+    <p class="alert alert-success mt-4 mb-4">@ViewBag.Mensagem</p>
+}
+<div class="d-flex justify-content-center align-items-center vh-100 flex-column">
+    <div class="text-center mb-4">
+        <h2>Olá, seja bem-vindo novamente!</h2>
+    </div>
+    <div class="login-container">
+
+        <form method="post" asp-controller="Aluno" asp-action="Login">
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="Email" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" name="Senha" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+        <p class="mt-4">Não possui uma conta?<a asp-controller="Aluno" asp-action="Criar"> Cadastrar-se</a></p>
+    </div>
+</div>

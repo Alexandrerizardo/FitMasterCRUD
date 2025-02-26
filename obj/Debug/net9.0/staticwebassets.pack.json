@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\Projects\\AspNet\\MVCteste\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\MVCteste.bundle.scp.css",
-      "PackagePath": "staticwebassets\\MVCteste.vg6gkwjbav.bundle.scp.css"
+      "PackagePath": "staticwebassets\\MVCteste.bstvihgfmn.bundle.scp.css"
     },
     {
       "Id": "D:\\Projects\\AspNet\\MVCteste\\wwwroot\\css\\site.css",
@@ -11,6 +11,10 @@
     {
       "Id": "D:\\Projects\\AspNet\\MVCteste\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\AspNet\\MVCteste\\wwwroot\\fonts\\FRIENDS-ULTRABOLD.OTF",
+      "PackagePath": "staticwebassets\\fonts\\FRIENDS-ULTRABOLD.OTF"
     },
     {
       "Id": "D:\\Projects\\AspNet\\MVCteste\\wwwroot\\js\\site.js",

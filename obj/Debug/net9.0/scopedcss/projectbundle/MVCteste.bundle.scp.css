@@ -1,6 +1,16 @@
 /* _content/MVCteste/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('/fonts/FRIENDS-ULTRABOLD.OTF') format('opentype');
+  font-weight: normal;    
+  font-style: normal;
+  }
+  
+  body[b-m18e77psyj] {
+      font-family: 'MinhaFonte', sans-serif;
+  }
 
 a.navbar-brand[b-m18e77psyj] {
   white-space: normal;
